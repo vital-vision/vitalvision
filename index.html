@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Andhra Pradesh Water Quality Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Welcome Screen -->
+  <div id="welcome-screen" class="screen active">
+    <h1>💧 Water Quality Dashboard</h1>
+    <h2>Andhra Pradesh Mandals</h2>
+    <button id="start-btn">▶ Start</button>
+  </div>
+
+  <!-- Select Mandal Screen -->
+  <div id="select-screen" class="screen">
+    <h2>Select a Mandal</h2>
+    <select id="mandal-select">
+      <option value="">-- Choose Mandal --</option>
+    </select>
+    <button id="show-report-btn">Show Report</button>
+  </div>
+
+  <!-- Report Screen -->
+  <div id="report-screen" class="screen">
+    <h2>Water Quality Report</h2>
+    <table id="report-table">
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Village</th>
+          <th>pH</th>
+          <th>Turbidity (NTU)</th>
+          <th>TDS (ppm)</th>
+          <th>Status</th>
+          <th>People Affected</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <button id="back-btn">⬅ Back</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
